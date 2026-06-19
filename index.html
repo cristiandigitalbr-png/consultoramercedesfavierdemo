@@ -126,6 +126,7 @@
     padding: 16px 34px; text-decoration: none; font-size: 12px;
     letter-spacing: 2.5px; text-transform: uppercase; font-weight: 500;
     border-radius: 2px; transition: background 0.3s, transform 0.2s;
+    border: 1.5px solid var(--dorado);
   }
   .btn-primary:hover { background: #a07c4d; transform: translateY(-2px); }
 
@@ -368,7 +369,9 @@
 
   @media (max-width: 768px) {
     nav { padding: 16px 20px; }
-    .hero { padding: 90px 24px 30px; min-height: auto; }
+    .hero { padding: 105px 24px 45px; min-height: auto; }
+    .hero-inner > div[style*="flex"] { flex-direction: column; align-items: stretch; }
+    .btn-primary, .btn-secondary { text-align: center; width: 100%; box-sizing: border-box; }
     .puertas-grid { grid-template-columns: 1fr; }
     .cert-grid, .dos-caminos { grid-template-columns: 1fr; gap: 24px; }
     .puertas, .que-es, .yobb, .cert, .testimonios, .contacto, .libros { padding: 60px 24px; }
